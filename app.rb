@@ -1,9 +1,13 @@
 require 'sinatra'
 
-get '/' do
-  "Hello!"
+get '/birthday' do
+  p params
+  @name = params[:user_name]
+  @day = params[:birthday_day]
+  @month = params[:birthday_month]
+  erb(:index)
 end
 
-get '/birthday' do
-  erb(:index)
+post '/birthday_form' do
+  erb :birthday_form
 end
