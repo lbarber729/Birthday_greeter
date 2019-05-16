@@ -1,5 +1,20 @@
-<% if(@birthday_date != @todays_date)%>
-<h1> ?? days until your Birthday </h1>
-<% else %>
-<h1> HAPPY BIRTHDAY <%= @name %>! </h1>
-<% end  %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+ body {background-color: powderblue;}
+ h1   {color: black;}
+ </style>
+</head>
+
+<body>
+
+  <% if(@birthday_date != @todays_date)%>
+  <h1> ??? days until your Birthday </h1>
+  <% else %>
+  <h1> HAPPY BIRTHDAY <%= @name %>! </h1>
+  <% end  %>
+
+</body>
+</html>
